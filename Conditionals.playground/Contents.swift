@@ -42,11 +42,6 @@ if !hasPostOffice {
     print("Gdzie można kupić znaczki pocztowe?")
 }
 
-/*
-
-komentarz do sprawdzenia gita
- 
-*/
 
 
 
