@@ -67,5 +67,38 @@ let error = (code: statusCode, error: errorString)
 error.code
 error.error
 
+let firstErrorCode = 404
+let secondErrorCode = 200
+let errorCodes = (firstErrorCode, secondErrorCode)
+
+switch errorCodes {
+case (404, 404):
+    print("Nie znaleziono elementów.")
+case (404, _):
+    print("Nie znaleziono pierwszego elementu.")
+case (_, 404):
+    print("Nie znaleziono drugiego elementu.")
+default:
+    print("Znaleziono wszystkie elementy.")
+}
+
+/*
+let age = 25
+switch age {
+case 18...35:
+    print("Doskonały zakres demograficzny.")
+default:
+    break
+}
+*/
+
+let age = 25
+if case 18...35 = age, age >= 21 {
+    print("To doskonały zakres demograficzny i możesz spożywać alkohol!")
+}
+
+
+
+
 
 
