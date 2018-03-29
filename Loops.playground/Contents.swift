@@ -32,8 +32,14 @@ while i < 6 {
 var shields = 5
 var blastersOverheating = false
 var blasterFireCount = 0
+var spaceDemonsDestroyed = 0
 
 while shields > 0 {
+    
+    if spaceDemonsDestroyed == 500 {
+        print("Pokonałeś 500 demonów! Gratulujemy, koniec gry!")
+        break
+    }
     
     if blastersOverheating {
         print("Broń się przegrzała! Zainicjowano proces schładzania.")
@@ -50,7 +56,7 @@ while shields > 0 {
     }
     //strzelamy!
     print("Strzelamy!")
-    
     blasterFireCount+=1
+    spaceDemonsDestroyed+=1
 }
 
